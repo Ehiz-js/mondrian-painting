@@ -5,28 +5,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mondrian Project</title>
 		<style>
-			/* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
+			/*
+			 Write your CSS here
+			 Gap Colour: #000
+			 White: #F0F1EC
+			 Red: #E72F24
+			 Black: #232629
+			 Blue: #004592
+			 Yellow: #F9D01E
 
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
+			 For dimensions, see dimensions.png image.
+			 HINT: Remember you can't change the properties of grid lines.
+			 But grid lines are transparent!
+			 */
 			#flex-container {
 				display: flex;
+				height: 100vh;
 				justify-content: center;
 				align-items: center;
 			}
 			#main-container {
 				display: grid;
-				grid-template: 463px 374px/ 320px 428px;
-				gap: 10px;
+				grid-template: 414px 305px/ 320px 401px;
+				gap: 9px;
 				background-color: #000;
 			}
 			#main1 {
@@ -37,10 +38,26 @@
 				background-color: #f0f1ec;
 			}
 			#main3 {
-				background-color: #f0f1ec;
+				display: grid;
+				grid-template: 285px 20px / 100%;
+				background-color: #000;
+				gap: 9px;
 			}
 			#main4 {
+				display: grid;
+				grid-template: 295px 20px/351px 50px;
 				background-color: #f0f1ec;
+			}
+			#main-3-1,
+			#main-3-2 {
+				background-color: #f0f1ec;
+			}
+			#main-4-1 {
+				background-color: #f0f1ec;
+			}
+			#main-4-2,
+			#main-4-3 {
+				background-color: #000;
 			}
 		</style>
 	</head>
@@ -50,8 +67,15 @@
 			<div id="main-container">
 				<div id="main1"></div>
 				<div id="main2"></div>
-				<div id="main3"></div>
-				<div id="main4"></div>
+				<div id="main3">
+					<div id="main-3-1"></div>
+					<div id="main-3-2"></div>
+				</div>
+				<div id="main4">
+					<div id="main-4-1"></div>
+					<div id="main-4-2"></div>
+					<div id="main-4-3"></div>
+				</div>
 			</div>
 		</div>
 		<!-- Write your HTML here -->
