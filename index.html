@@ -18,16 +18,40 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+			#flex-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#main-container {
+				display: grid;
+				grid-template: 463px 374px/ 320px 428px;
+				gap: 10px;
+				background-color: #000;
+			}
+			#main1 {
+				background-color: #e72f24;
+			}
+
+			#main2 {
+				background-color: #f0f1ec;
+			}
+			#main3 {
+				background-color: #f0f1ec;
+			}
+			#main4 {
+				background-color: #f0f1ec;
+			}
 		</style>
 	</head>
 
 	<body>
 		<div id="flex-container">
 			<div id="main-container">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div id="main1"></div>
+				<div id="main2"></div>
+				<div id="main3"></div>
+				<div id="main4"></div>
 			</div>
 		</div>
 		<!-- Write your HTML here -->
