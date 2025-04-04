@@ -39,14 +39,15 @@
 			}
 			#main3 {
 				display: grid;
-				grid-template: 285px 20px / 100%;
+				grid-template: 277px 20px / 100%;
 				background-color: #000;
 				gap: 9px;
 			}
 			#main4 {
 				display: grid;
-				grid-template: 295px 20px/351px 50px;
-				background-color: #f0f1ec;
+				grid-template: 277px 20px/341px 51px;
+				background-color: #000;
+				gap: 9px;
 			}
 			#main-3-1,
 			#main-3-2 {
@@ -55,9 +56,30 @@
 			#main-4-1 {
 				background-color: #f0f1ec;
 			}
-			#main-4-2,
-			#main-4-3 {
+			#main-4-2 {
+				display: grid;
+				grid-template: 125px 172px/100%;
+				gap: 10px;
 				background-color: #000;
+				grid-row: span 2;
+			}
+			#main-4-2-1 {
+				background-color: #004592;
+			}
+			#main-4-2-2 {
+				background-color: #f0f1ec;
+			}
+			#main-4-3 {
+				display: grid;
+				grid-template: 20px/189px 144px;
+				gap: 9px;
+				background-color: #000;
+			}
+			#main-4-3-1 {
+				background-color: #f9d01e;
+			}
+			#main-4-3-2 {
+				background-color: #232629;
 			}
 		</style>
 	</head>
@@ -73,8 +95,14 @@
 				</div>
 				<div id="main4">
 					<div id="main-4-1"></div>
-					<div id="main-4-2"></div>
-					<div id="main-4-3"></div>
+					<div id="main-4-2">
+						<div id="main-4-2-1"></div>
+						<div id="main-4-2-2"></div>
+					</div>
+					<div id="main-4-3">
+						<div id="main-4-3-1"></div>
+						<div id="main-4-3-2"></div>
+					</div>
 				</div>
 			</div>
 		</div>
